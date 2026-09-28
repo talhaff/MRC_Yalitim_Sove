@@ -45,17 +45,17 @@ export default function AboutPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-80"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-gold"></span>
               </span>
-              Kurumsal Kimliğimiz
+              Malatya Fabrikamız & Kurumsal
             </div>
             
             <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 lg:mb-8 font-display leading-[1.08] tracking-tight">
-              Geleceği <br />
+              Malatya Söve İmalatı & <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-amber-200 to-brand-gold bg-[length:200%_auto] animate-gradient">
-                Şekillendiriyoruz.
+                Yalıtım Üretim Gücü.
               </span>
             </h1>
             <p className="text-slate-300 text-base md:text-xl leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
-              Yarım asra yaklaşan vizyonumuzla, yalıtım sektöründe kaliteyi ve estetiği en üst seviyede buluşturuyoruz.
+              Malatya 1. OSB&apos;deki modern tesislerimizde, 20 yılı aşkın tecrübemizle yüksek dansite EPS ısı yalıtım levhası ve dış cephe söve profilleri üretiyoruz.
             </p>
           </motion.div>
         </div>
@@ -79,21 +79,21 @@ export default function AboutPage() {
                   transition={{ duration: 1, delay: 0.5 }}
                   className="h-0.5 bg-brand-gold" 
                 />
-                Hikayemiz
+                Hikayemiz & Üretimimiz
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy leading-tight font-display relative pl-6">
                 <motion.div 
                   style={{ scaleY: scrollYProgress }}
                   className="absolute left-0 top-0 w-1 h-full bg-brand-gold origin-top rounded-full"
                 />
-                Üretimin Gücü, <br /> Uzmanlığın İmzası.
+                Malatya&apos;dan Doğu Anadolu&apos;ya <br /> Yalıtım ve Söve Liderliği.
               </h2>
               <div className="space-y-6 text-slate-500 text-lg leading-relaxed">
                 <p>
-                  MRC Yalıtım Söve olarak, 20 yılı aşkın süredir inşaat sektörüne dış cephe estetiği ve ısı yalıtım çözümleri sunuyoruz. Malatya'daki modern üretim tesisimizde, tam otomasyonlu sistemlerle her yıl milyonlarca metrekarelik yalıtım gücü üretiyoruz.
+                  <strong>MRC Yalıtım Söve</strong> olarak, 20 yılı aşkın süredir inşaat sektörüne dış cephe estetiği, CNC söve imalatı ve EPS mantolama çözümleri sunuyoruz. Malatya 1. Organize Sanayi Bölgesi&apos;ndeki fabrikamızda, tam otomasyonlu sistemlerle her yıl 300.000 m²&apos;nin üzerinde yalıtım ve söve kapasitesi üretiyoruz.
                 </p>
                 <p>
-                  Sadece ürün değil, mühendislik çözümleri sunan bir yapıdayız. Her bir söve profilinde ve yalıtım levhasında, "Kusursuz Üretim" ilkemizi temsil eden hassas bir işçilik bulunmaktadır.
+                  Malatya başta olmak üzere Elazığ, Adıyaman, Kahramanmaraş, Bingöl, Sivas ve çevre illerdeki yüzlerce konut, villa ve kamu projesine doğrudan fabrika fiyatlarıyla TSE belgeli mantolama ve pencere söve profilleri tedarik ediyoruz.
                 </p>
               </div>
               

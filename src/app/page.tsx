@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { 
@@ -20,6 +21,19 @@ import {
 import ProductMarquee from '@/components/home/ProductMarquee';
 import HeroImageSlider from '@/components/home/HeroImageSlider';
 import FaqAccordion from '@/components/home/FaqAccordion';
+
+export const metadata: Metadata = {
+  title: 'Malatya Söve İmalatı & Dış Cephe Mantolama | MRC Yalıtım',
+  description: 'Malatya söve imalatı ve EPS dış cephe mantolama fabrikası. 1. OSB\'de yüksek dansite strafor söve, pencere sövesi, kat silmesi. En uygun fabrika toptan fiyatı için tıklayın!',
+  alternates: {
+    canonical: 'https://mrcyalitimsove.com',
+  },
+  openGraph: {
+    title: 'Malatya Söve İmalatı & Dış Cephe Mantolama | MRC Yalıtım Söve',
+    description: 'Malatya 1. OSB\'de yüksek dansite EPS yalıtım levhası, söve ve mantolama profilleri üretimi. Fabrikadan toptan/perakende fiyat teklifi alın.',
+    url: 'https://mrcyalitimsove.com',
+  },
+};
 
 const faqItems = [
   {
@@ -68,18 +82,18 @@ export default function HomePage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-80"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-gold"></span>
               </span>
-              MRC Yalıtım Söve Malatya
+              Malatya 1. OSB İmalat Fabrikası
             </div>
             
             <h1 className="text-[2.2rem] sm:text-4xl md:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight font-display">
-              MRC Yalıtım Söve <br />
+              Malatya Söve İmalatı & <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-amber-200 to-brand-gold bg-[length:200%_auto] animate-gradient">
-                Malatya Söve & EPS Fabrikası
+                EPS Dış Cephe Mantolama
               </span>
             </h1>
             
             <p className="text-sm sm:text-base md:text-xl text-slate-300 max-w-xl leading-relaxed font-light">
-              Malatya 1. OSB tesislerimizde yüksek yoğunluklu EPS ısı yalıtım levhaları, dış cephe mantolama sistemleri ve estetik pencere söve profilleriyle yapılarınıza değer katan çözümler üretiyoruz.
+              Malatya 1. Organize Sanayi Bölgesi tesislerimizde yüksek dansite EPS ısı yalıtım levhaları, dış cephe mantolama sistemleri ve CNC kesim dekoratif pencere söve profilleri üretiyoruz. Fabrikadan doğrudan toptan ve perakende en uygun fiyat garantisi.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3.5 md:gap-5 pt-2 md:pt-4">
@@ -162,10 +176,10 @@ export default function HomePage() {
       <section className="py-16 lg:py-24 bg-[#0A192F] text-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16 space-y-4 flex flex-col items-center">
-            <p className="text-brand-gold font-bold uppercase tracking-widest text-xs md:text-sm">Katalog & Ürün Çözümleri</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display">Tüm Dış Cephe & Yalıtım Gruplarımız</h2>
+            <p className="text-brand-gold font-bold uppercase tracking-widest text-xs md:text-sm">Malatya Fabrikamızdan Doğrudan Satış</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display">Malatya Söve & Dış Cephe Mantolama Ürünleri</h2>
             <p className="text-slate-300 text-sm md:text-base max-w-xl">
-              Yüksek dansite EPS ısı yalıtım levhaları, mimari pencere söveleri ve dekoratif cephe kaplamalarında fabrika kalitesi.
+              Yüksek dansite karbonlu EPS ısı yalıtım levhaları, CNC kesim pencere söveleri, kat silmeleri ve dekoratif cephe kaplamalarında fabrika imalat kalitesi.
             </p>
             <Link 
               href="/MRC_2026_Katalog.pdf" 
@@ -180,23 +194,23 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
-              { name: 'Dış Cephe Söveleri', desc: 'Dekoratif, akrilik zırh kaplamalı ve ısı yalıtımlı pencere söve profilleri.', img: '/images/cat-sove.webp' },
-              { name: 'EPS Yalıtım Levhaları', desc: 'Yüksek yoğunluklu beyaz ve karbonlu EPS ile maksimum enerji tasarrufu.', img: '/images/cat-eps.webp' },
-              { name: 'Dekoratif Kaplamalar', desc: 'Fugalı mantolama panelleri, ahşap ve doğal taş görünümlü cephe sistemleri.', img: '/images/cat-deco.webp' },
+              { name: 'Malatya Dış Cephe Söveleri', desc: 'CNC kesim, akrilik zırh kaplamalı ve çatlamayan pencere söve ve taç profilleri.', img: '/images/cat-sove.webp' },
+              { name: 'Malatya EPS Yalıtım Levhaları', desc: 'Yüksek yoğunluklu beyaz ve karbonlu EPS levhalar ile %50 mantolama tasarrufu.', img: '/images/cat-eps.webp' },
+              { name: 'Dekoratif Fugalı Kaplamalar', desc: 'Kendinden kanallı fugalı mantolama panelleri, taş ve ahşap görünümlü cephe sistemleri.', img: '/images/cat-deco.webp' },
             ].map((cat, idx) => (
               <div 
                 key={idx}
                 className="transform transition-transform duration-300 hover:-translate-y-2"
               >
                 <a 
-                  href={`https://wa.me/905322585244?text=${encodeURIComponent(`Merhaba, ${cat.name} hakkında detaylı bilgi ve fabrika fiyat teklifi almak istiyorum.`)}`}
+                  href={`https://wa.me/905322585244?text=${encodeURIComponent(`Merhaba, ${cat.name} hakkında detaylı bilgi ve Malatya fabrika fiyat teklifi almak istiyorum.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative aspect-[4/5] rounded-[48px] overflow-hidden block shadow-2xl"
                 >
                   <Image 
                     src={cat.img} 
-                    alt={`Malatya ${cat.name} - MRC Yalıtım Söve Üretimi`} 
+                    alt={`Malatya ${cat.name} - MRC Yalıtım Söve İmalatı`} 
                     fill 
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -207,7 +221,7 @@ export default function HomePage() {
                     <h3 className="text-2xl sm:text-3xl font-bold mb-2 group-hover:text-brand-gold transition-colors duration-300">{cat.name}</h3>
                     <p className="text-slate-300 text-sm group-hover:text-white transition-colors duration-300">{cat.desc}</p>
                     <div className="mt-4 sm:mt-6 flex items-center gap-2 text-brand-gold font-bold opacity-90 group-hover:opacity-100 transition-opacity duration-300">
-                      Fiyat Teklifi Al <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform duration-300" />
+                      Fabrikadan Fiyat Teklifi Al <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform duration-300" />
                     </div>
                   </div>
                 </a>
@@ -223,10 +237,10 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-3 gap-10 lg:gap-12">
             <div className="lg:col-span-1 space-y-6 sm:space-y-8">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-navy font-display leading-tight">
-                Modern Üretim, <br className="hidden md:block" /> Kusursuz Mühendislik.
+                Malatya Söve İmalatında <br className="hidden md:block" /> Kusursuz Mühendislik.
               </h2>
               <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
-                Malatya 1. OSB&apos;deki tam otomasyonlu sistemlerimiz, her söve profili ve yalıtım levhasının milimetrik hassasiyetle ve standart yüksek kalitede çıkmasını sağlar.
+                Malatya 1. OSB&apos;deki tam otomasyonlu CNC sistemlerimiz; pencere sövesi, fuga, kat silmesi ve yüksek dansite EPS yalıtım levhalarının milimetrik hassasiyetle ve standart yüksek kalitede üretilmesini sağlar.
               </p>
               <Link href="/about" className="inline-flex items-center gap-2 text-brand-gold font-bold group">
                 Fabrikamızı Tanıyın <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />

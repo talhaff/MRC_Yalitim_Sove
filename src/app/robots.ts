@@ -4,12 +4,15 @@ export default function robots(): MetadataRoute.Robots {
   const baseUrl = 'https://mrcyalitimsove.com';
 
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/admin/'],
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/admin', '/admin/*'],
+      },
+    ],
     sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }
 

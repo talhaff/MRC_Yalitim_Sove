@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, Lock, FileText, CheckCircle2, ChevronRight, Mail, Phone, MapPin, Eye } from 'lucide-react';
+import { BreadcrumbSchema } from '@/components/shared/SEOAndTransitions';
 
 export const metadata: Metadata = {
   title: 'KVKK Aydınlatma Metni ve Çerez Politikası',
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
 export default function KVKKPage() {
   return (
     <main className="pt-28 pb-20 bg-slate-50 min-h-screen">
+      <BreadcrumbSchema 
+        items={[
+          { name: 'Ana Sayfa', url: 'https://mrcyalitimsove.com' },
+          { name: 'KVKK Aydınlatma Metni', url: 'https://mrcyalitimsove.com/kvkk' }
+        ]} 
+      />
       {/* Hero Header */}
       <section className="bg-[#050B15] text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-gold/10 via-transparent to-brand-gold/5 pointer-events-none" />

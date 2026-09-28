@@ -34,27 +34,26 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://mrcyalitimsove.com"),
   title: {
-    default: "MRC Yalıtım Söve | Malatya Söve & EPS Isı Yalıtım Fabrikası",
+    default: "Malatya Söve & Mantolama İmalatı | MRC Yalıtım Söve Fabrikası",
     template: "%s | MRC Yalıtım Söve Malatya",
   },
-  description: "MRC Yalıtım Söve - Malatya 1. OSB'de yüksek dansite EPS ısı yalıtım levhası, dış cephe mantolama ve dekoratif pencere söve profilleri imalatçısı. Fabrikadan doğrudan toptan satış ve en uygun fiyat teklifi alın.",
+  description: "Malatya 1. OSB'de yüksek dansite EPS ısı yalıtım levhası, dış cephe mantolama ve dekoratif pencere söve profilleri imalatı. Fabrikadan toptan/perakende en uygun fiyat teklifini hemen alın!",
   keywords: [
     // 1. Marka ve Ana SERP Aramaları
+    "Malatya söve",
+    "Malatya söve imalatı",
+    "Malatya mantolama",
+    "Malatya yalıtım",
+    "Malatya mantolama firmaları",
     "MRC Yalıtım Söve",
     "mrc yalıtım söve",
     "MRC Yalıtım",
     "MRC Söve",
-    "mrc yalitim sove",
-    "mrcyalitimsove.com",
-    "Malatya söve",
-    "Malatya yalıtım",
-    "Malatya mantolama",
-    "Malatya söve imalatı",
     "Malatya strafor söve",
     "Malatya mantolama fiyatları",
     "Malatya EPS üreticisi",
     "EPS ısı yalıtım levhası",
-    "dış cephe kaplama",
+    "dış cephe kaplama Malatya",
     
     // 2. Ürün Bazlı Aramalar
     "pencere söveleri",

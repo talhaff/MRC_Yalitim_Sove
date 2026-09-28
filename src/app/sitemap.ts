@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: `${baseUrl}/`,
+      url: `${baseUrl}`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 1.0,
@@ -28,12 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'yearly',
       priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/MRC_2026_Katalog.pdf`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.75,
     },
   ];
 }

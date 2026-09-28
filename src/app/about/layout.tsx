@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kurumsal & Malatya Fabrika Üretim Gücü',
-  description: 'Malatya 1. OSB modern tesislerimizde yıllık 300.000 m² EPS yalıtım levhası ve söve üretim kapasitesi. MRC Yalıtım Söve kurumsal kimliği, vizyon, misyon ve kalite sertifikaları.',
+  title: 'Hakkımızda & Malatya Söve İmalat Fabrikası',
+  description: 'Malatya 1. OSB modern tesislerimizde yıllık 300.000 m² yüksek dansite EPS yalıtım levhası ve söve imalatı. MRC Yalıtım Söve kurumsal vizyonu ve fabrika üretim gücü.',
   keywords: [
+    'Malatya söve fabrikası',
+    'Malatya söve imalatı',
     'Malatya yalıtım fabrikası',
     'MRC Yalıtım Söve kurumsal',
     'Malatya EPS üreticisi',
-    'söve fabrikası Malatya',
     '1. OSB yalıtım tesisi',
     'Yeşilyurt söve imalatı'
   ],
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     canonical: 'https://mrcyalitimsove.com/about',
   },
   openGraph: {
-    title: 'Kurumsal & Malatya Fabrika Üretim Gücü | MRC Yalıtım Söve',
+    title: 'Hakkımızda & Malatya Söve İmalat Fabrikası | MRC Yalıtım Söve',
     description: 'Malatya 1. OSB modern tesislerimizde tam otomasyonlu EPS yalıtım levhası ve dış cephe söve üretimi.',
     url: 'https://mrcyalitimsove.com/about',
     images: [
@@ -29,6 +30,18 @@ export const metadata: Metadata = {
   },
 };
 
+import { BreadcrumbSchema } from '@/components/shared/SEOAndTransitions';
+
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbSchema 
+        items={[
+          { name: 'Ana Sayfa', url: 'https://mrcyalitimsove.com' },
+          { name: 'Kurumsal & Hakkımızda', url: 'https://mrcyalitimsove.com/about' }
+        ]} 
+      />
+      {children}
+    </>
+  );
 }

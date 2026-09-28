@@ -69,17 +69,17 @@ export default function ContactPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-80"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-gold"></span>
               </span>
-              İletişim Kanallarımız
+              Malatya Fabrika & Satış Hattı
             </div>
             
             <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-5 lg:mb-8 font-display leading-[1.08] tracking-tight">
-              Sorularınız İçin <br />
+              Malatya Söve & <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-amber-200 to-brand-gold bg-[length:200%_auto] animate-gradient">
-                Buradayız.
+                Fiyat Teklifi İletişim.
               </span>
             </h1>
             <p className="text-slate-300 text-sm sm:text-base md:text-xl leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
-              Projeleriniz için teknik destek, toptan alım talepleri veya fabrikamız hakkında detaylı bilgi almak için ekibimizle doğrudan iletişime geçebilirsiniz.
+              Malatya 1. OSB fabrikamızdan söve imalatı, EPS mantolama levhası toptan fiyatları ve özel mimari projeleriniz için teknik ekibimizle anında iletişime geçin.
             </p>
           </motion.div>
         </div>

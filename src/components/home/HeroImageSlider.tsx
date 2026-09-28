@@ -19,7 +19,7 @@ const slides: SlideItem[] = [
   {
     id: 'facade-completed',
     src: '/images/hero/hero_facade_completed.webp',
-    alt: 'Dış Cephe Yalıtımı ve Söve Uygulaması Tamamlanmış Modern Bina',
+    alt: 'Malatya Dış Cephe Mantolama ve Pencere Söve İmalatı Tamamlanmış Bina - MRC Yalıtım',
     title: 'Kusursuz Cephe Çözümleri',
     subtitle: 'Yüksek dansite mantolama ve estetik mimari söve detayları',
     tag: 'Eksiksiz Yalıtım',
@@ -28,7 +28,7 @@ const slides: SlideItem[] = [
   {
     id: 'mantolama-compare',
     src: '/images/hero/hero_mantolama_compare.webp',
-    alt: 'Dış Cephe Isı Yalıtım Mantolama Öncesi ve Sonrası Dönüşüm',
+    alt: 'Malatya Dış Cephe Isı Yalıtım Mantolama Öncesi ve Sonrası Dönüşüm - MRC Yalıtım Söve',
     title: 'Öncesi & Sonrası Mantolama',
     subtitle: 'Yıpranmış yapılardan %50 enerji tasarruflu modern binalara',
     tag: 'Bina Dönüşümü & Tasarruf',
@@ -37,7 +37,7 @@ const slides: SlideItem[] = [
   {
     id: 'modern-villa',
     src: '/images/hero/hero_modern_villa.webp',
-    alt: 'Modern Konutlarda Premium Dış Cephe Isı Yalıtımı ve Mimari Kaplama',
+    alt: 'Malatya Villa ve Konut Dış Cephe Söve Kaplama ve Mantolama Uygulaması',
     title: 'Premium Dış Cephe Yalıtımı',
     subtitle: 'Dört mevsim termal konfor ve mimari prestij katan çözümler',
     tag: 'Estetik & Konfor',
@@ -46,7 +46,7 @@ const slides: SlideItem[] = [
   {
     id: 'sove-architecture',
     src: '/images/hero/hero_sove_architecture.webp',
-    alt: 'Kusursuz Mimari Cephe Uygulaması ve Söve Montajı',
+    alt: 'Malatya Pencere Söve Modelleri ve Dış Cephe Kat Silmesi İmalatı',
     title: 'Dekoratif Cephe Söveleri',
     subtitle: 'Her mimari projeye özel ölçü ve milimetrik işçilik',
     tag: 'Mimari Uygulama',
@@ -55,7 +55,7 @@ const slides: SlideItem[] = [
   {
     id: 'eps-insulation',
     src: '/images/hero/hero_eps_insulation.webp',
-    alt: 'Yüksek Yoğunluklu Karbonlu ve Beyaz EPS Isı Yalıtım Levhaları',
+    alt: 'Malatya 1. OSB Yüksek Dansite Karbonlu ve Beyaz EPS Isı Yalıtım Levhaları Fabrikası',
     title: 'Yüksek Dansite EPS Yalıtım',
     subtitle: 'Binalarda %50 enerji tasarrufu sağlayan bloklar',
     tag: 'Maksimum Isı Yalıtımı',
@@ -64,7 +64,7 @@ const slides: SlideItem[] = [
   {
     id: 'cnc-sove',
     src: '/images/hero/hero_cnc_facility.webp',
-    alt: 'CNC Otomasyonlu Söve ve Dış Cephe Profil Üretim Tesisi',
+    alt: 'Malatya Söve Fabrikası CNC Otomasyonlu Söve ve Dış Cephe Profil Kesim Tesisi',
     title: 'CNC Milimetrik Söve Üretimi',
     subtitle: 'Son teknoloji tel kesim ve mikronize kaplama',
     tag: 'Tam Otomasyon CNC',
@@ -73,7 +73,7 @@ const slides: SlideItem[] = [
   {
     id: 'sove-mouldings',
     src: '/images/hero/hero_sove_production.webp',
-    alt: 'Mimari Dış Cephe Söve Profilleri ve Kat Silmeleri Deposu',
+    alt: 'Malatya Söve Deposu Dış Cephe Pencere Söveleri, Taç ve Köşe Taşları',
     title: 'Mimari Söve & Taç Profilleri',
     subtitle: 'Estetik, hafif ve darbelere karşı zırhlı yüzey',
     tag: 'Dış Cephe Estetiği',
