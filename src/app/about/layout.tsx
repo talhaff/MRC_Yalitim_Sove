@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BreadcrumbSchema } from '@/components/shared/SEOAndTransitions';
 
 export const metadata: Metadata = {
   title: 'Hakkımızda & Malatya Söve İmalat Fabrikası',
@@ -29,8 +30,6 @@ export const metadata: Metadata = {
     ],
   },
 };
-
-import { BreadcrumbSchema } from '@/components/shared/SEOAndTransitions';
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
   return (
