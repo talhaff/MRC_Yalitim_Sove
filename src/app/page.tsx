@@ -66,7 +66,7 @@ export default function HomePage() {
   return (
     <main className="flex flex-col w-full overflow-x-hidden">
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-[90vh] lg:min-h-screen flex items-center bg-[#050B15] overflow-hidden pt-36 pb-20 md:pt-44 md:pb-28 lg:py-0">
+      <section className="relative min-h-[90vh] lg:min-h-screen flex items-center bg-[#050B15] overflow-hidden pt-36 pb-20 md:pt-44 md:pb-28 lg:pt-36 lg:pb-24 xl:pt-40 xl:pb-28">
         {/* Background Overlay / Decoration */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           <div className="absolute top-[10%] left-[5%] w-[350px] h-[350px] md:w-[600px] md:h-[600px] bg-brand-gold/15 rounded-full blur-[130px]" />
@@ -155,13 +155,13 @@ export default function HomePage() {
             {/* Premium Sliding AI Hero Images */}
             <HeroImageSlider />
             {/* Stats Badge */}
-            <div className="absolute -bottom-10 -left-10 bg-white p-10 rounded-[40px] shadow-2xl z-40 flex gap-10 border border-slate-100">
-              <div className="text-center border-r border-slate-100 pr-10">
-                <p className="text-5xl font-black text-brand-navy">25K<span className="text-brand-gold text-2xl">+</span></p>
+            <div className="absolute -bottom-8 -left-8 xl:-bottom-10 xl:-left-10 bg-white p-6 xl:p-8 rounded-[32px] xl:rounded-[40px] shadow-2xl z-40 flex gap-6 xl:gap-10 border border-slate-100">
+              <div className="text-center border-r border-slate-100 pr-6 xl:pr-10">
+                <p className="text-4xl xl:text-5xl font-black text-brand-navy">25K<span className="text-brand-gold text-2xl">+</span></p>
                 <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mt-2">m² Üretim/Ay</p>
               </div>
               <div className="text-center">
-                <p className="text-5xl font-black text-brand-gold">20</p>
+                <p className="text-4xl xl:text-5xl font-black text-brand-gold">20+</p>
                 <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mt-2">Yıllık Tecrübe</p>
               </div>
             </div>
