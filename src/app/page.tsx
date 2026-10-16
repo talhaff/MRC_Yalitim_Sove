@@ -76,6 +76,16 @@ export default function HomePage() {
 
         <div className="container mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="text-white space-y-6 md:space-y-8">
+            {/* Breadcrumb Navigasyonu */}
+            <nav aria-label="Breadcrumb" className="flex justify-start">
+              <ol className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/10 text-xs md:text-sm text-slate-300 backdrop-blur-md">
+                <li className="text-brand-gold font-semibold flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-brand-gold animate-pulse" />
+                  Ana Sayfa
+                </li>
+              </ol>
+            </nav>
+
             {/* Luxury Badge */}
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-gradient-to-r from-brand-gold/20 via-brand-gold/10 to-transparent border border-brand-gold/30 text-brand-gold font-bold text-[11px] md:text-xs uppercase tracking-[0.2em] backdrop-blur-md shadow-[0_2px_15px_rgba(212,175,55,0.15)]">
               <span className="relative flex h-2 w-2">

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { History, Target, Eye, ShieldCheck, Factory, Award, Building2, Globe2, ChevronRight, Phone } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
@@ -39,6 +40,19 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
+            {/* Breadcrumb Navigasyonu */}
+            <nav aria-label="Breadcrumb" className="mb-6 flex justify-center lg:justify-start">
+              <ol className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/10 text-xs md:text-sm text-slate-300 backdrop-blur-md">
+                <li>
+                  <Link href="/" className="hover:text-brand-gold transition-colors">
+                    Ana Sayfa
+                  </Link>
+                </li>
+                <ChevronRight size={14} className="text-brand-gold/70 shrink-0" />
+                <li className="text-brand-gold font-semibold">Kurumsal</li>
+              </ol>
+            </nav>
+
             {/* Luxury Badge */}
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-gradient-to-r from-brand-gold/20 via-brand-gold/10 to-transparent border border-brand-gold/30 text-brand-gold font-bold text-[11px] md:text-xs uppercase tracking-[0.2em] backdrop-blur-md shadow-[0_2px_15px_rgba(212,175,55,0.15)] mb-6">
               <span className="relative flex h-2 w-2">
