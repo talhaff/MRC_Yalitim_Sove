@@ -375,6 +375,92 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 7.5 HİZMETLERİMİZ - SEO Internal Linking Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 md:mb-16">
+            <span className="text-brand-gold text-xs font-bold uppercase tracking-widest">
+              Malatya 1. OSB Fabrika Üretimi
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-brand-navy mt-3 font-display">
+              Hizmetlerimiz
+            </h2>
+            <p className="text-slate-500 text-base md:text-lg mt-4 max-w-2xl mx-auto">
+              Söve imalatı, dış cephe mantolama ve EPS ısı yalıtım levhası üretiminde
+              Doğu Anadolu&apos;nun lider markası MRC Yalıtım Söve hizmetleri.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+            {[
+              {
+                title: 'Malatya Söve İmalatı',
+                desc: 'CNC kesim pencere sövesi, kat silmesi ve saray tacı profilleri. Fabrikadan toptan fiyat.',
+                href: '/hizmetler/malatya-sove-imalati',
+                icon: '🏗️',
+              },
+              {
+                title: 'Dış Cephe Mantolama',
+                desc: 'Yüksek dansite EPS levha ile profesyonel dış cephe mantolama sistemi. %50 enerji tasarrufu.',
+                href: '/hizmetler/malatya-dis-cephe-mantolama',
+                icon: '🧱',
+              },
+              {
+                title: 'Malatya Yalıtım',
+                desc: 'EPS ısı yalıtım levhası üretimi. Karbonlu ve beyaz strafor çeşitleri ile bina yalıtım çözümleri.',
+                href: '/hizmetler/malatya-yalitim',
+                icon: '🏠',
+              },
+              {
+                title: 'EPS Isı Yalıtım Levhası',
+                desc: '16-30 kg/m³ yoğunlukta karbonlu ve beyaz EPS levhalar. TS EN 13163 belgeli üretim.',
+                href: '/hizmetler/eps-isi-yalitim-levhasi',
+                icon: '📦',
+              },
+              {
+                title: 'Dekoratif Dış Cephe Kaplama',
+                desc: 'Fugalı panel, taş desen kaplama ve dekoratif cephe elemanları ile modern mimari.',
+                href: '/hizmetler/dekoratif-dis-cephe-kaplama',
+                icon: '🎨',
+              },
+              {
+                title: 'Taşyünü Yanmaz Söve',
+                desc: 'A1 sınıfı tam yanmaz, 150 kg/m³ taşyünü çekirdekli güvenlik söve profilleri.',
+                href: '/hizmetler/tasyunu-yanmaz-sove',
+                icon: '🔥',
+              },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group p-6 rounded-2xl border border-slate-200 hover:border-brand-gold/40 hover:shadow-lg transition-all bg-white"
+              >
+                <span className="text-2xl mb-4 block">{item.icon}</span>
+                <h3 className="font-bold text-brand-navy text-base md:text-lg mb-2 group-hover:text-brand-gold transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-4">
+                  {item.desc}
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-bold text-brand-gold group-hover:gap-3 transition-all">
+                  Detaylı Bilgi <ArrowRight size={16} />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/hizmetler"
+              className="inline-flex items-center gap-2.5 px-8 py-4 bg-brand-navy text-white font-bold text-sm uppercase tracking-wider rounded-2xl hover:bg-brand-gold hover:text-brand-navy transition-all shadow-md active:scale-95"
+            >
+              Tüm Hizmetleri Görüntüle
+              <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* 8. FACTORY LOCATION & GOOGLE MAPS */}
       <section className="py-16 md:py-20 bg-[#050B15] text-white relative overflow-hidden border-t border-white/10">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-gold/5 rounded-full blur-[100px] pointer-events-none" />

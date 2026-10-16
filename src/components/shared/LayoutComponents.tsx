@@ -16,7 +16,8 @@ import {
   BookOpen,
   PhoneCall,
   Sparkles,
-  ExternalLink
+  ExternalLink,
+  Wrench
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -54,6 +55,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: 'Ana Sayfa', href: '/', icon: Home },
+    { name: 'Hizmetlerimiz', href: '/hizmetler', icon: Wrench },
     { name: 'Kurumsal', href: '/about', icon: Building2 },
     { name: 'Ürün Kataloğu', href: '/MRC_2026_Katalog.pdf', external: true, icon: BookOpen },
     { name: 'İletişim', href: '/contact', icon: MapPin },
@@ -324,6 +326,7 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-sm uppercase tracking-widest mb-10 text-brand-gold">Hızlı Menü</h4>
             <ul className="space-y-4 text-slate-400">
+              <li><Link href="/hizmetler" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">Hizmetlerimiz</Link></li>
               <li><Link href="/about" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">Fabrikamız</Link></li>
               <li><Link href="/MRC_2026_Katalog.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">Ürün Kataloğu</Link></li>
               <li><Link href="/contact" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">İletişim Kanalları</Link></li>
@@ -332,14 +335,14 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-sm uppercase tracking-widest mb-10 text-brand-gold">Ürün Gruplarımız</h4>
+            <h4 className="font-bold text-sm uppercase tracking-widest mb-10 text-brand-gold">Hizmetlerimiz</h4>
             <ul className="space-y-4 text-slate-400">
-              <li><Link href="/#soveler" className="hover:text-brand-gold transition-colors">Dış Cephe Söve Modelleri</Link></li>
-              <li><Link href="/#eps" className="hover:text-brand-gold transition-colors">EPS Isı Yalıtım Levhaları</Link></li>
-              <li><Link href="/#silmeler" className="hover:text-brand-gold transition-colors">Kat Silmeleri & Bordürler</Link></li>
-              <li><Link href="/#tac" className="hover:text-brand-gold transition-colors">Dekoratif Taç & Motifler</Link></li>
-              <li><Link href="/#kosetasi" className="hover:text-brand-gold transition-colors">Bina Köşe Taşları & L-Köşe</Link></li>
-              <li><Link href="/#paneller" className="hover:text-brand-gold transition-colors">Fugalı Dış Cephe Kaplamaları</Link></li>
+              <li><Link href="/hizmetler/malatya-sove-imalati" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">Malatya Söve İmalatı</Link></li>
+              <li><Link href="/hizmetler/malatya-dis-cephe-mantolama" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">Dış Cephe Mantolama</Link></li>
+              <li><Link href="/hizmetler/malatya-yalitim" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">Malatya Yalıtım</Link></li>
+              <li><Link href="/hizmetler/eps-isi-yalitim-levhasi" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">EPS Isı Yalıtım Levhası</Link></li>
+              <li><Link href="/hizmetler/dekoratif-dis-cephe-kaplama" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">Dekoratif Dış Cephe Kaplama</Link></li>
+              <li><Link href="/hizmetler/tasyunu-yanmaz-sove" className="hover:text-brand-gold hover:translate-x-1 transition-all inline-block">Taşyünü Yanmaz Söve</Link></li>
             </ul>
           </div>
 
